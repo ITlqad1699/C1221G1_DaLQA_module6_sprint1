@@ -1,0 +1,30 @@
+họp thống nhất giao diện prototype:
+	- Sử dụng fr bootstrap 4.6.1- dùng link CDN
+	- Màu: xanh lá
+	- Font chữ:  font-family: roboto, mon, hel, sans-serif
+			+ font header:
+			+ font body: 
+			+ font footer: 
+	- Font size: nên dùng rem để sử dụng kích thước cho font size
+			+ Title: 									24 px
+			+ Body:										16 px
+			+ H1: 										32 px
+ 			+ more desciption:  example: báo lỗi,... 	12px
+	- Kểu chữ:
+	
+	- Button: (icon + chữ)	 thư viện font awesome
+			+ thêm: success
+			+ sửa: warning	có thể custom lại 
+			+ xóa: danger
+			+ cancel: secondary
+			+ tìm kiếm: primary
+	- Table: 	
+			+ table table-triped
+			+ thead success
+	- Card: 
+			+ An làm trong quá trình anh em có thể support
+	- Layout:
+			+ sidebar: An làm trong quá trình anh em có thể support
+			
+			
+	* nhận xét cuộc họp: mọi người chú ý ít trao đổi nói chuyện riêng, nghiêm túc trao đổi ý kiến. 

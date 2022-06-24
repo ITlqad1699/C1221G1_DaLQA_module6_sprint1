@@ -1,0 +1,24 @@
+create database:
+	Hóa đơn:
+		id: Long
+		số phiếu:			String		
+		ngày làm:			Date/Time	
+		khách hàng: 		Khách Hàng
+		Nhân viên: 			Nhân Viên	
+		Số lượng:			Integer	
+		Thuốc: 				Thuốc{
+									đơn giá:
+									đơn vị tính:		==> Quan hệ n-n
+								}
+		Loại hóa đơn:		Đa trị(bán lẻ, bán sỉ)
+		Tổng tiền:			String 
+		ghi chú:			String
+		cờ:					boolean
+		
+	Đơn thuốc:
+		id: 				Long
+		Tên đơn: 			String
+		Đối tượng:			Bản Phụ(Đối tượng)
+		Số ngày uống: 		String
+		Thuốc: 				Thuốc (n-n)
+		

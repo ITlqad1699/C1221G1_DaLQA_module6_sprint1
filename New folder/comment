@@ -1,0 +1,11 @@
+sau quá trình xây dựng database và ERD em nhận thấy 1 số bất cập như sau:
+	+ Quá trình xây dựng một số thành viên còn chưa chú ý lắm nên có 1 số lỗi phát sinh:
+		ví dụ: đã thảo luận là biến cờ flag đặt không mang tiền tố nhưng có bạn/anh vẫn đặt.
+		
+	+ Cách đặt tên cho các trường còn lung tung, khiến quá trình tổng hợp còn nhiều sai sót 
+	(*bản thân em khi báo mọi người tổng hợp bản vẽ ERD cũng còn thiếu sót vì không ra quy chuẩn trước)
+		
+	 => Để quá trình hoàn thiện project đạt kết quả tốt thì em khuyến nghị mọi người nên dành thời gian đọc srs
+		cũng như nghiên cứu kĩ kế hoạch project trước khi lên lớp.
+		
+	Thân ái!! 

@@ -1,0 +1,74 @@
+trao đổi cuộc họp ngày 24/06/2022
+
+	- thảo luận đặt tên: 
+	
+			- property
+					+ Khoa: chỉ đặt tên trường gọn nhẹ: id, name,... 	(biểu quyết: 4)
+					+ Tuân: đặt tên kèm tiền tố của đối tượng			(biểu quyết: đa số) ==> chốt 
+					
+			- tên cờ: 
+					+ status 	(6)
+					+ active 	(5)
+					+ isDeleted (2)
+					+ flag 		(đa số) ==> chốt
+						
+			
+	nhóm 1: Thuốc & Nhập kho : 
+	
+		- Thuốc: 
+					+ hoạt chất: đa trị => có nên tách bảng hay không? 
+													=> đổi thành đơn trị
+					+ có thêm trường hình ảnh: => công nghệ firebase
+					+ cách thức lưu đơn vị quy đổi: đơn vị nhỏ nhất tùy loại thuốc
+						*đề xuất: tạo thêm bảng phụ của đơn vị quy đổi 
+									=> 2 bảng phụ đơn vị tính và đơn vị quy đổi 
+					+ Cần có thêm cột số lượng của database	
+
+					
+		*Note: quá trình xây dựng database có điều gì bất cập thì trao đổi sau
+		
+		- Nhập kho: 
+					gồm các bảng:
+					+ supplier 					(thông tin nhà cung cấp)
+					+ invoice					(thông tin nhập kho)
+					+ payment					(thông tin thanh toán)
+					+ import_medicine_invoice	
+					
+	nhóm 2: User,Giỏ hàng, Đơn hàng onl, chat: 
+	
+		- User
+					+ Có 3 bảng: 
+								+ User	
+								+ Role (manager, employee, customer)
+								+ UserRole:  
+										. manager có toàn quyền
+										. employee có các quyền cơ bảng
+										. customer 		
+		- Giỏ hàng: 
+					
+					
+					+ có bảng Đơn hàng onl riêng 
+					
+		- Chat với admin:
+					+ lấy theo session id của người dùng => 1 phòng chat với admin (role nhân viên lấy entity)
+							
+	nhóm 3:	 Hóa đơn và đơn thuốc:
+	
+		- Hóa đơn: 
+					+ quan hệ 1-n: customer; employee
+					
+					+ quan hệ n-n: bảng thuốc.
+					
+		- Đơn thuốc:  
+					+ quan hệ n-n: bảng thuốc => bảng phụ có thêm số lần uống/ngày, mỗi lần uống 
+					
+	nhóm 4: Customer & Employee: 
+	
+		- Customer:  
+					+ Thêm 1 dữ liệu database default tên là khách lẻ.
+					
+		- Employee:
+					+ Biến cờ: boollean (Entity), database(BIT)
+					+ Trường EmployeeCode => trường EmployeeId	
+			
+	QA( hủy, hoàn, doanh thu);
