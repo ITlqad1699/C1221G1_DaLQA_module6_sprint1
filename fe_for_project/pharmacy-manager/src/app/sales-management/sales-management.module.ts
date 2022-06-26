@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SalesManegementRoutingModule } from './sales-manegement-routing.module';
-import {SalesManegementComponentComponent} from "./sales-manegement-component.component";
+import { SalesManagementRoutingModule } from './sales-management-routing.module';
+import {SalesManagementComponentComponent} from "./sales-management-component.component";
 import {RetailComponent} from "./retail-component/retail/retail.component";
 import {AvailablePrescriptionListComponent} from "./retail-component/available-prescription-list/available-prescription-list.component";
 import {PrescriptionDetailComponent} from "./retail-component/prescription-detail/prescription-detail.component";
@@ -11,7 +11,7 @@ import { RefundCustomerComponent } from './refund-customer/refund-customer.compo
 
 @NgModule({
   declarations: [
-    SalesManegementComponentComponent,
+    SalesManagementComponentComponent,
     RetailComponent,
     AvailablePrescriptionListComponent,
     PrescriptionDetailComponent,
@@ -20,7 +20,7 @@ import { RefundCustomerComponent } from './refund-customer/refund-customer.compo
   ],
   imports: [
     CommonModule,
-    SalesManegementRoutingModule
+    SalesManagementRoutingModule
   ]
 })
-export class SalesManegementModule { }
+export class SalesManagementModule { }
